@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="upper-nav">
+        <div class="upper-line">Sign up for our newsletter
+            now and get 10% off your first order! <b>Register now <i class="fa fa-angle-double-right"
+                    aria-hidden="true"></i></b></div>
+        <div class="main-nav">
+            <a class="logo" href="#">ShopZ</a>
+            <div class="search-container">
+                <div class="search">
+                    <input type="text" class="searchInput" placeholder="Search products..">
+                    <button type="submit" class="searchIcon">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="topnav-right">
+                <a href="wishlist.html"><i class="fa fa-heart"><span id="wishCount"></span></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="#"><i class="fa fa-user"></i></a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="aside">
+            <h4>FILTER</h4>
+            <div class="price-filter">
+                <h5>Max price:</h5>
+                <input type="number" id="number">
+            </div>
+            <form class="form">
+                <h5>Category</h5>
+                  <input type="radio" id="mensClothing" name="category" value="mensClothing">
+                  <label for="mensClothing">Men's clothing</label>
+                  <input type="radio" id="womensClothing" name="category" value="womensClothing">
+                  <label for="womensClothing">Women's clothing</label>
+                  <input type="radio" id="electronics" name="category" value="electronics">
+                  <label for="electronics">Electronics</label>
+                  <input type="radio" id="jewelery" name="category" value="jewelery">
+                  <label for="jewelery">Jewelery</label>
+            </form>
+        </div>
+        <div class="product-container">
+            <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+        </div>
+    </div>
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
